@@ -138,6 +138,7 @@ function allowDrop(ev) {
     ev.preventDefault();
 }
 
+
 //Show hides tooltip when dragging player select
 function showHideToolTip(show, toolTip) {
     var tip = document.getElementById("" + toolTip + 'tooltip');

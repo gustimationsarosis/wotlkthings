@@ -1,0 +1,91 @@
+.playergrid {
+    width: 140px;
+    height: 40px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+    .tooltip .tooltiptext {
+        border: 1px solid black;
+        visibility: hidden;
+        width: 200px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 0.9;
+    }
+
+.button-1 {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .button-1:hover {
+        color: #DDDDDD;
+        border-color: #DDDDDD;
+    }
+
+    .button-1:focus {
+        background-color: #F082AC;
+    }
+
+    .button-1:active {
+        color: #BBBBBB;
+        border-color: #555;
+        top: 0.1em;
+        border: 1px solid black;
+        box-shadow: 2px 2px #888888;
+    }
+
+footer {
+    text-align: center;
+    padding: 3px;
+}
+
+.copyright {
+    opacity: 0.6;
+    font-size: 13px;
+}
